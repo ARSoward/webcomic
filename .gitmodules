@@ -1,0 +1,3 @@
+[submodule "themes/webcomic-theme"]
+	path = themes/webcomic-theme
+	url = https://github.com/arsoward/webcomic-theme
