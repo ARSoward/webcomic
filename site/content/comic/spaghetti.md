@@ -1,6 +1,6 @@
 ---
 title: Spaghetti
-date: 2020-07-05T19:29:44.711Z
+date: 2020-07-06T19:29:44.711Z
 image: img/noodles.jpg
 thumbnail: img/noodles.jpg
 tags:
