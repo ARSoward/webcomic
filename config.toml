@@ -1,4 +1,41 @@
+# Basic website configuration.
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My Webcomic Site"
+title = "Example Comic"
+# Use the webcomic theme.
 theme = "webcomic-theme"
+
+
+# Hamburger menu config: links to pages of the site.
+# name = "Display Name"
+# url = "/relative-url"
+[[menu.main]]
+  name = "About"
+  url = "/about"
+
+[[menu.main]]
+  name = "Archive"
+  url = "/archive"
+
+
+# Menu bar config: links to social media
+# Use the "pre" field to display a FontAwesome icon: https://fontawesome.com/v4.7.0/icons/#brand
+# name = "Display Name"
+# url = "https://link.com/me"
+# pre = "<i class='FONTAWESOME ICON NAME HERE'></i>"
+[[menu.social]]
+    name = "GitHub"
+    url = "https://github.com/arsoward/webcomic-theme"
+    pre = "<i class='fab fa-github'></i>"
+
+
+# Footer config: Any other links
+# name = "Display Name"
+# url = "https://link.com/me" OR "/relative-link"
+[[menu.footer]]
+  name = "About"
+  url = "/about"
+
+[[menu.footer]]
+  name = "Theme"
+  url = "https://github.com/arsoward/webcomic-theme"
