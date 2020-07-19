@@ -34,4 +34,6 @@ $ hugo serve
 ```
 
 ## Deploy with Netlify
-Fork this repo, create a free Netlify account, and follow Netlify's instructions [here](https://www.netlifycms.org/docs/hugo/#deploying-with-netlify) to deploy. The files that configure and display Netlify's content management system are located in `static/admin`.
+This repo has the necessary configuratin and static pages to use Netlify content management system. The files that configure and display Netlify's content management system are located in `static/admin`. To deploy your own copy of this repo:
+1. Fork this repo.
+2. Create a free Netlify account and follow Netlify's instructions [here](https://www.netlifycms.org/docs/hugo/#deploying-with-netlify) to deploy. 

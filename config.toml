@@ -1,5 +1,5 @@
 # Basic website configuration.
-baseURL = "https://angry-heyrovsky-77ea2b.netlify.app/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Example Comic"
 # Use the webcomic theme.
