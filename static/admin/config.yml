@@ -1,13 +1,13 @@
 backend:
   name: git-gateway
 
-media_folder: "site/content/img" # Folder where user uploaded files should go
+media_folder: "static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Blog" # Used in the UI, ie.: "New Post"
-    folder: "site/content/blog" # The path to the folder where the documents are stored
+    folder: "content/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
@@ -21,7 +21,7 @@ collections: # A list of collections the CMS should be able to edit
         required: false
   - name: "comic" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Comic" # Used in the UI, ie.: "New Post"
-    folder: "site/content/comic" # The path to the folder where the documents are stored
+    folder: "content/comic" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
@@ -36,16 +36,10 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
     files:
-      - file: "site/content/_index.md"
+      - file: "content/_index.md"
         label: "Home Page"
         name: "home"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: "Banner", name: "banner", widget: "image", required: false}
           - {label: "Body", name: "body", widget: "markdown", required: false}
-      - file: "site/content/comics/_index.md"
-        label: "Comics"
-        name: "comics"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Logo, name: logo, widget: image}

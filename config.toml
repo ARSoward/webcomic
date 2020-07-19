@@ -1,5 +1,5 @@
 # Basic website configuration.
-baseURL = "http://example.org/"
+baseURL = "https://angry-heyrovsky-77ea2b.netlify.app/"
 languageCode = "en-us"
 title = "Example Comic"
 # Use the webcomic theme.
@@ -15,7 +15,7 @@ theme = "webcomic-theme"
 
 [[menu.main]]
   name = "Archive"
-  url = "/archive"
+  url = "/comic"
 
 
 # Menu bar config: links to social media
