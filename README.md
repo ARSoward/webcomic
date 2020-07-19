@@ -10,9 +10,10 @@ I'm using this repo to develop a hugo theme for webcomics. It has also been set 
       - [ ] graphics in header bar
     - [x] footer with contact info
     - [x] comic display
-      - [ ] navigation buttons
+      - [x] navigation buttons
       - [x] tag display
-      - [ ] description display
+      - [x] description display
+      - [x] show most recent comic on homepage
     - [x] comic archive with links to all comics
       - [x] list of comics
       - [ ] organize list by chapter (tag?)
