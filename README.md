@@ -38,3 +38,19 @@ $ hugo serve
 This repo has the necessary configuratin and static pages to use Netlify content management system. The files that configure and display Netlify's content management system are located in `static/admin`. To deploy your own copy of this repo:
 1. Fork this repo.
 2. Create a free Netlify account and follow Netlify's instructions [here](https://www.netlifycms.org/docs/hugo/#deploying-with-netlify) to deploy. 
+
+## Style
+### Header Graphic
+Replace `banner.jpg` with your own image to change the graphic header image. Bigger is better! The entire width of the image will be displayed starting at the top. How much height of the image viewers see depends on the device they're using. The example header comes from [Pixabay on Pexels](https://www.pexels.com/@pixabay). 
+
+## Background Image
+replace `background.png` with your own image to change the background. I chose a [tile-able image from toptal subtle patterns](https://www.toptal.com/designers/subtlepatterns/handmade-paper/) for the example. If you want to use a larger non-tiled background, you'll have to mess with the css a bit. I recommend this for a large, fixed background (tip from [css tricks](https://css-tricks.com/perfect-full-page-background-image/)):
+```css
+html { 
+  background: url(images/bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+```

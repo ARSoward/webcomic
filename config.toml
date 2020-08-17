@@ -9,6 +9,11 @@ theme = "webcomic-theme"
 # Hamburger menu config: links to pages of the site.
 # name = "Display Name"
 # url = "/relative-url"
+# To add more content pages, make a blog post and add the link here.
+# E.g for a blog post called "Comissions Open": 
+# [[menu.main]]
+#   name = "Comissions"
+#   url = "/blog/comissions-open"
 [[menu.main]]
   name = "About"
   url = "/about"
