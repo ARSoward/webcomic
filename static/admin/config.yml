@@ -1,0 +1,79 @@
+# This file configures the Netlify content management system. Make chagnes at your own risk...
+backend:
+  name: git-gateway
+
+media_folder: "static/img" # Folder where user uploaded files should go
+public_folder: "img"
+
+collections: # A list of content collections the CMS can edit
+  # Comic collection is where you upload your comics (obviously).
+  - name: "comic" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Comic" # Used in the UI, ie.: "New Post"
+    folder: "content/comic" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: true}
+      - {label: "Image", name: "image", widget: "image", required: true}
+      - {
+          label: "Chapter", 
+          name: "chapter", 
+          widget: "relation", 
+          collection: "chapter", 
+          valueField: "title", 
+          searchFields: ["title"], 
+          displayFields: ["title"], 
+          required: false
+        }
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Description", name: "description", widget: "markdown", required: false}
+      - {label: Tags, name: tags, widget: list, required: false}
+
+  # chapter collection is where you can define the chapters of the comic.
+  # This is used in the archive page to sort the comics into chapters.
+  - name: "chapter" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Chapter" # Used in the UI, ie.: "New Post"
+    folder: "content/chapter" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "First Published", name: "date", widget: "datetime", required: true}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+
+  # Characters will be displayed in the about page in the order they are published in (oldest to newest).
+  - name: "character" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Character" # Used in the UI, ie.: "New Post"
+    folder: "content/character" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Name", name: "name", widget: "string", required: true}
+      - {label: "Published", name: "date", widget: "datetime", required: true}
+      - {label: "Image", name: "image", widget: "image", required: false}
+
+  # Blog posts need an image, a title, and text content.
+  # You can use these like an actual blog, or just as a way to post links to your store/patreon/what have you.
+  # You can add links to published blog posts in the menu bar by editing the website config file.
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Image", name: "image", widget: "image", required: true}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: Tags, name: tags, widget: list, required: false}
+
+  # Generic pages that many websites use.
+  # You can add/remove links these pages in the menu bar by editing the website config file.
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/about.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Body", name: "body", widget: "markdown", required: false}

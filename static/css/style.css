@@ -1,0 +1,42 @@
+html { 
+    background-repeat: no-repeat, repeat;
+    /* background-image: linear-gradient(to bottom right, #1b1227, #2A1B3D, #412b5f, #75418b); */
+    background: linear-gradient(to top left, #1b1227, #2A1B3D,#3B145B, #75418b), 
+                url(../img/bg.png);
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+}
+
+#logo {
+    min-height: 100px;
+}
+
+.graphic-header {
+    background: url("../img/long-banner-smaller.jpg") no-repeat top right fixed;
+    -webkit-background-size: auto 100px;
+    -moz-background-size: auto 100px;
+    -o-background-size: auto 100px;
+    background-size: auto 100px;
+    background-color: white !important;
+    height: 100px;
+}
+
+.navbar-burger {
+    color: #3B145B;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    color: lightgray;
+}
+
+.box {
+    background-color: #130d1b!important;
+}
+
+footer{
+    background-color: #130d1b!important;
+}
+
+a {
+    color: lightgray;
+}
