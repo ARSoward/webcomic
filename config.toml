@@ -20,7 +20,7 @@ theme = "webcomic-theme"
 
 [[menu.main]]
   name = "Archive"
-  url = "/comic"
+  url = "/chapter"
 
 
 # Menu bar config: links to social media
