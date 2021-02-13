@@ -1,15 +1,10 @@
 # Basic website configuration. Only change the title.
 baseURL = "/"
 languageCode = "en-us"
-title = "Wild Rose"
+title = "Alice in Wonderland"
 # Use the webcomic theme.
 theme = "webcomic-theme"
 
-
-# Menu bar config: link to a scalable transparent logo.
-# If you don't have one, comment out this config. The menu bar will use the title configured above.
-[[menu.logo]]
-  pre = "<img src='/img/logo.png' id='logo' alt='logo'>"
 
 # Hamburger menu config: links to pages of the site.
 # name = "Display Name"
@@ -34,34 +29,9 @@ theme = "webcomic-theme"
 # url = "https://link.com/me"
 # pre = "<i class='FONTAWESOME ICON NAME HERE'></i>"
 [[menu.social]]
-    name = "Tumblr"
-    url = "https://karinamorenoart.tumblr.com/"
-    pre = "<i class='fab fa-tumblr'></i>"
-
-[[menu.social]]
-    name = "Twitter"
-    url = "https://twitter.com/karinamorenoart"
-    pre = "<i class='fab fa-twitter'></i>"
-
-[[menu.social]]
-    name = "Etsy"
-    url = "https://www.etsy.com/shop/KarinaMorenoArt"
-    pre = "<i class='fab fa-etsy'></i>"
-
-[[menu.social]]
-    name = "Patreon"
-    url = "https://www.patreon.com/karinamorenoart"
-    pre = "<i class='fab fa-patreon'></i>"
-
-[[menu.social]]
-    name = "Twitch"
-    url = "https://m.twitch.tv/karinamorenoart/profile"
-    pre = "<i class='fab fa-twitch'></i>"
-
-[[menu.social]]
-    name = "Instagram"
-    url = "https://www.instagram.com/KarinaMorenoArt/"
-    pre = "<i class='fab fa-instagram'></i>"
+    name = "GitHub"
+    url = "https://github.com/arsoward/webcomic-theme"
+    pre = "<i class='fab fa-github'></i>"
 
 
 # Footer config: Any other links
