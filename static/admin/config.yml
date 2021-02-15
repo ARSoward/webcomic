@@ -1,4 +1,4 @@
-# This file configures the Netlify content management system. Make chagnes at your own risk...
+# This file configures the Netlify content management system. Make changes at your own risk...
 backend:
   name: git-gateway
 
@@ -38,7 +38,7 @@ collections: # A list of content collections the CMS can edit
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "First Published", name: "date", widget: "datetime", required: true}
-      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Thumbnail", name: "image", widget: "image", required: false}
 
   # Characters will be displayed in the about page in the order they are published in (oldest to newest).
   - name: "character" # Used in routes, ie.: /admin/collections/:slug/edit
