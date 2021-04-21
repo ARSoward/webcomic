@@ -5,6 +5,11 @@ title = 'Alice in Wonderland'
 # Use the webcomic theme.
 theme = 'webcomic-theme'
 
+# Params used to configure the theme.
+# These classes will be added to the header on all pages.
+# Read the bulma docs for more info on available classes.
+[params]
+  headerClasses = 'is-dark'
 
 # Hamburger menu config: links to pages of the site.
 # name = 'Display Name'
