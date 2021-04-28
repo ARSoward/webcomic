@@ -1,7 +1,7 @@
 # Basic website configuration. Only change the title.
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Alice in Wonderland'
+title = 'Demo Webcomic'
 # Use the webcomic theme.
 theme = 'webcomic-theme'
 
